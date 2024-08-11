@@ -1,40 +1,101 @@
 import streamlit as st
 
+# المقدمة
 st.markdown(
     """
     <div dir="rtl" style="text-align: right;">
         <h1 style="text-align: center;">قصة فهد: رحلة البحث عن وظيفة</h1>
-        <br>
         <h4>المقدمة</h4>
         <p>خلني أحكي لك قصة شاب من المدينة اسمه فهد توه متخرج ويبحث عن وظيفته الأولى.</p>
-        <br><br>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+# المحطة الأولى: معرفة الواقع
+st.markdown(
+    """
+    <div dir="rtl" style="text-align: right;">
         <h4>رحلة فهد في البحث عن وظيفة</h4>
         <h5>أول محطة: معرفة الواقع</h5>
         <p>فهد، شاب سعودي من المدينة، قضى سنوات دراسته الجامعية وهو يحلم باليوم اللي يتخرج فيه ويبدأ مشواره المهني. بعد ما استلم شهادته، بدأ يدور على فرص وظيفية في المدينة اللي يحبها ويعتبرها جزء من هويته.</p>
         <p>فهد قرر يبدأ بمراجعة البيانات عشان يفهم الوضع. أول شي، طالع في الرسم البياني اللي يوضح توزيع الوظائف حسب المنطقة. اكتشف أن الرياض ومكة هم اللي يستحوذون على أغلب الفرص الوظيفية، بنسبة 42.3% و25.1% على التوالي. أما المدينة اللي هو فيها، فنصيبها 3.13% بس. هنا فهد بدأ يفكر: "الفرص في المدينة محدودة، بس ما يعني إنها معدومة. اللي يحتاجه هو إنه يكون ذكي في بحثه."</p>
-        <br><br>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+st.image("Proportion of Job Postings by Region.png", caption="توزيع نسبة الوظائف حسب المنطقة", use_column_width=True)
+
+# المحطة الثانية: تحديد نوع الشركات
+st.markdown(
+    """
+    <div dir="rtl" style="text-align: right;">
         <h5>المحطة الثانية: تحديد نوع الشركات</h5>
         <p>بعدين، طالع في الرسم اللي يوضح نوع الشركات في السوق. لقى أن أغلب الفرص المتاحة في القطاع الخاص، والشركات شبه الحكومية فرصها قليلة. فهد هنا قال لنفسه: "إذاً، لازم أركز على الشركات الخاصة. هم اللي عندهم العدد الأكبر من الفرص، وممكن تكون الفرصة المناسبة لي بينهم."</p>
-        <br><br>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+st.image("comptype.png", caption="نوع الشركات", use_column_width=True)
+
+# المحطة الثالثة: حجم الشركة
+st.markdown(
+    """
+    <div dir="rtl" style="text-align: right;">
         <h5>المحطة الثالثة: حجم الشركة</h5>
         <p>فهد بعدين ركز على حجم الشركات. شاف أن الشركات الصغيرة والمتوسطة هي اللي مسيطرة على السوق. "الشركات الصغيرة دايم تكون فيها فرص للنمو والتعلم. صح، ممكن الرواتب ما تكون عالية، بس الخبرة اللي بأخذها فيها ما لها مثيل."</p>
-        <br><br>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+st.image("compsize.png", caption="حجم الشركات", use_column_width=True)
+
+# المحطة الرابعة: الراتب المتوقع
+st.markdown(
+    """
+    <div dir="rtl" style="text-align: right;">
         <h5>المحطة الرابعة: الراتب المتوقع</h5>
         <p>ما نسى فهد يتأكد من توقعات الراتب. من خلال الرسم اللي يوضح "توقعات الراتب للخريجين الجدد"، عرف أن الراتب المتوقع يتراوح بين 4000 و6000 ريال. قرر إنه يركز على الفرص اللي تقدم هذا النطاق، ويكون واقعي في طلباته.</p>
-        <br><br>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+st.image("Expected Salary Range for Fresh Graduates.png", caption="توقعات الراتب للخريجين الجدد", use_column_width=True)
+
+# المحطة الخامسة: تفضيلات الشركات
+st.markdown(
+    """
+    <div dir="rtl" style="text-align: right;">
         <h5>المحطة الخامسة: تفضيلات الشركات</h5>
         <p>في بحثه، اكتشف فهد من خلال "تفضيلات الجنس في الوظائف" أن بعض الشركات تفضل الرجال. "هذا في صالحي، بس برضو لازم أكون مستعد للمنافسة مع غيري من الشباب."</p>
-        <br><br>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+st.image("Gender Preference in Job Postings.png", caption="تفضيلات الجنس في الوظائف", use_column_width=True)
+
+# المحطة السادسة: الفرص المتاحة للخريجين
+st.markdown(
+    """
+    <div dir="rtl" style="text-align: right;">
         <h5>المحطة السادسة: الفرص المتاحة للخريجين</h5>
         <p>وأخيرًا، رسم "فرص العمل للخريجين الجدد مقابل أصحاب الخبرة" أعطى فهد دفعة من الثقة. "56.7% من الفرص هي للخريجين الجدد مثلي. يعني عندي فرصة كبيرة لو قدمت صح!"</p>
-        <br><br>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+st.image("Individuals vs. Fresh Graduates.png", caption="فرص العمل للخريجين الجدد مقابل أصحاب الخبرة", use_column_width=True)
+
+# النهاية: اتخاذ القرار
+st.markdown(
+    """
+    <div dir="rtl" style="text-align: right;">
         <h4>النهاية: اتخاذ القرار</h4>
         <p>بعد ما جمع فهد كل هالمعلومات، قرر يركز على تقديم طلباته للشركات الصغيرة والمتوسطة في المدينة. صحيح إنه ممكن يواجه تحديات بسبب قلة الفرص، لكن بإصراره وذكائه في تحليل السوق، كان متأكد أنه بيلقى الفرصة اللي يحلم فيها.</p>
         <p>وبالفعل، بعد فترة قصيرة من البحث والتقديم، حصل فهد على وظيفة في شركة تقنية ناشئة. كانت البداية بسيطة، لكن فهد كان مليان حماس. عرف أن هذي الفرصة بتكون بداية مشواره الطويل نحو تحقيق أحلامه.</p>
@@ -43,10 +104,3 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-st.image("Proportion of Job Postings by Region.png", caption="توزيع نسبة الوظائف حسب المنطقة", use_column_width=True)
-st.image("comptype.png", caption="نوع الشركات", use_column_width=True)
-st.image("compsize.png", caption="حجم الشركات", use_column_width=True)
-st.image("Expected Salary Range for Fresh Graduates.png", caption="توقعات الراتب للخريجين الجدد", use_column_width=True)
-st.image("Gender Preference in Job Postings.png", caption="تفضيلات الجنس في الوظائف", use_column_width=True)
-st.image("Individuals vs. Fresh Graduates.png", caption="فرص العمل للخريجين الجدد مقابل أصحاب الخبرة", use_column_width=True)
