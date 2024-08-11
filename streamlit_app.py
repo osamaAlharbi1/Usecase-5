@@ -1,11 +1,11 @@
 import streamlit as st
 
-# importing libraries
-import numpy as np 
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import plotly.express as px 
+# # importing libraries
+# import numpy as np 
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# import plotly.express as px 
 
 
 st.title("مونوبولي")
@@ -38,17 +38,6 @@ st.write("ابو حمود:  تمام")
 st.write("معليش لو قاطعتك")
 st.write(" يالربع ايه انت الي تقرا .. وش رايكم نخليه يستعرض لنا أي جهة بالرياض افضل ودنا ناخذ افضل منطقتين؟ من حيث اسعار وجودة حياة وخدمات وبنية تحتية؟ ")
 
-option = st.radio("Salect", ['شمال الرياض', 'شرق الرياض', 'جنوب الرياض', "غرب الرياض", "وسط الرياض"])
-if option == "شمال الرياض": 
-    st.success("صح عليك.. رأينا أيضا نفس الشي")
-elif option == "شرق الرياض": 
-    st.success("صح عليك.. رأينا أيضا نفس الشي")
-elif option == 'جنوب الرياض': 
-    st.warning("امممم ، مانتوقع :(")
-elif option == 'وسط الرياض': 
-    st.warning("امممم ، مانتوقع :(")
-elif option == 'غرب الرياض': 
-    st.warning("امممم ، مانتوقع :(")
 
 st.text("تمام الشرق أو الشمال ")
 
